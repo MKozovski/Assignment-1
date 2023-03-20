@@ -1,0 +1,565 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 68.8px;
+    line-height: 63.7px;
+    letter-spacing: 0.8px;
+    background: #d6f1e4;
+    min-height: 100%;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: "offside";
+    font-size: 42px;
+    line-height: 63.7px;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "offside";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.8px;
+}
+
+h2 {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 78.8px;
+    line-height: 83.7px;
+    letter-spacing: 0.8px;
+}
+
+body {
+    font-family: "barlow";
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: url(./assets/header-image.png);
+    background-size: cover;
+    height: 1200px;
+    width: 100%;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 50px;  
+}
+
+nav ul {
+    font-family: "barlow";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 29px;
+    text-shadow: 5px 5px 3px black;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+span {
+    display: block;
+}
+
+.top ul {
+    margin-top: 20px;
+}
+
+.top li {
+    padding: 20px;
+}
+
+
+
+.top h1{
+    margin-top: 20px;
+}
+
+.intro {
+    display: flex;
+    width: auto;
+ }
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    position: absolute;
+    right: 0;
+    top: 205px;
+}
+
+.logos i {
+    padding: 30px;
+}
+.logos ul {
+    display: flex;
+    flex-direction: column;
+}
+.threepandas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.onepanda {
+    flex: 1 0 30%;
+    margin: 0p 20px;
+}
+
+.twopanda {
+    flex: 1 0 30%;
+    margin: 0px 20px;
+}
+
+.threepanda {
+    flex: 1 0 30%;
+    margin: 0p 20px;
+}
+
+
+.friends {
+    padding-top: 50px;
+
+}
+
+.friends h3 {
+    text-align: center;
+    color: #116500;
+    margin: 40px;
+}
+
+.info {
+
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    text-align: left;
+    height: 350px;
+}
+
+.infotext {
+    flex-basis: 75%;
+    margin: 0;
+    margin-left: 40px;
+    padding: 0;
+    font-size: 20px;
+    height: 60%;
+}
+
+.infotext h3 {
+    margin-top: 0;
+    color: #116500;
+
+}
+
+.treebear {
+    flex-basis: 25%;
+    margin-top: 0;
+    padding: 0;
+}
+
+.treebear img {
+    height: 100%
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: #116500;
+    padding: 20px 25px;
+    font-family: "offside";
+    font-size: 20px;
+}
+
+.info button {
+    background-color: #116500;
+    border: none;
+    color: white;
+    font-family: "offside";
+    font-size: 20px;
+}
+
+.pandas {
+    display: flex;
+    flex-wrap: wrap;
+    background: #213c28;
+    color: white;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pandas1 {
+    width: 50%;
+    padding: 50px;
+    margin: 0 auto; 
+    height: 50%;
+    width: 50%;
+    flex: 1 1 50%;
+
+}
+
+.pandas2 {
+    width: 50%;
+    padding: 0px;
+    margin: 0 auto; 
+    height: 50%;
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.pandas3 {
+    width: 50%;
+    padding: 0px;
+    margin: 0 auto; 
+    height: 50%;
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.pandas4 {
+    width: 50%;
+    padding: 0px;
+    margin: 0 auto; 
+    padding: 50px;
+    height: 50%;
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.pandas img {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    height: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.buttons a {
+    color: #116500;
+    margin: 0 auto;
+
+
+}
+
+.buttons i {
+    color: black;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+}
+
+.footermain {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: #213c28;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1 button {
+    background-color: #2c2d2c;
+    color: white;
+}
+
+
+.footer1 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2 h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer3 {
+    text-align: right;
+}
+
+.footer3 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerplus {
+    display: flex;
+}
+
+.footerend {
+    display: flex;
+    background:#2c2d2c;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.footermain button {
+    padding: 8px;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.shorth2 {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        width: 500px;
+        height: 400px;      
+        background: url(./assets/header-image.png);
+
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        color: white;
+        background-repeat: no-repeat;
+        
+    }
+    .logos {
+        display: none;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.8px;
+    }
+
+    .fullh2 {
+        display: none;
+    }
+
+    .shorth2 {
+        display: contents;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .hamburger {
+        display: contents;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+        position: absolute;
+        right: -62px;
+        top: 33px;  
+       
+    }
+
+    .threepandas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .onepanda {
+        flex: 1 1 45%;
+        padding: 0;
+        margin: 0px 15px 15px 0px;
+
+    }
+    
+    .twopanda {
+        flex: 1 1 45%;
+        margin-bottom: 50px;
+        padding: 0;
+        margin: 0px 0px 15px 15px;
+    }
+    
+    .threepanda {
+        flex: 1 1 100%;
+    }
+    
+    .treebear {
+        display: none;
+    }
+
+    .infotext h3 {
+        font-size: 30px;
+    }
+
+    .info {
+        height: 600px;
+    }
+
+    .infotext button {
+        margin: 20px;
+    }
+
+    .info button {
+        margin-left: 100px;
+
+    }
+
+    .pandas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .pandas button {
+        margin-left: 140px;
+       margin-top: 20px;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .buttons ul {
+        flex-direction: column;
+    }
+
+    .buttons li {
+        flex-direction: column;
+    }
+
+    .pandas1 {
+        order:2;
+        width: 100%;
+    }
+
+    .pandas2 {
+        order:1;
+        width: 100%;
+    }
+
+    .pandas3 {
+        order:2;
+        width: 100%;
+    }
+
+    .pandas4 {
+        order:2;
+        width: 100%;
+    }
+
+    .footer1 button {
+       padding: 20px;
+    }
+
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .footer1 li {
+        padding: 8px;
+    }
+    
+    .footer2 {
+        text-align: left;
+    }
+
+    .footerplus {
+        display: flex;
+       justify-content: space-between;
+       align-items: flex-end;
+     }
+
+    .footermain {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+
+    }
+
+   
+}
+
+
+
+/* Charcoal #2c2d2c; deep green #116500;  white; pine two #213c28; duck egg blue #d6f1e4*/
+/*  */
