@@ -467,7 +467,7 @@ h4 {
     }
 
     .infotext button {
-        margin: 20px;
+        margin: 20px auto;
     }
 
     .info button {
@@ -521,7 +521,8 @@ h4 {
     }
 
     .footer1 button {
-       padding: 20px;
+       
+       margin: 0 auto;
     }
 
     .footer1 {
@@ -542,8 +543,8 @@ h4 {
 
     .footerplus {
         display: flex;
-       justify-content: space-between;
-       align-items: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
      }
 
     .footermain {
